@@ -1,0 +1,35 @@
+property:
+id(int),Address(nvarchar(100)), property type(FK), no of bedroom(int), no of washroom(int), has living room(bool), 
+has drawing room(bool),no of kitchen(int), year of contruction(year), last renuvated(date), has car parking(bool), 
+near by(nvarchar(50)),Discription(nvarchar(265)), location, Creator id(FK), created date(datetime), 
+modified date(datetime), Area(FK), City(FK),
+
+
+property type:
+id(int), type,
+
+rent:
+id(int), property id(FK), monthly rent(decimal(6,2)), leasing(decimal(4,2)), availability(FK), type of rent(FK), 
+
+sale:
+id(int), property id(FK), price(decimal(8,2)), measurment(nvarchar(50)), no of floors(int), 
+
+city:
+id(int), Name(nvarchar(50))
+
+Area:
+id(int), Name(nvarchar(50)), Part(nvarchar(50))
+
+Creator:
+id(int), Name(nvarchar(50)), address(nvarchar(50)), Phone(nvarchar(50)), Email(nvarchar(50)), preferred contact, Best contact time(nvarchar(50)), 
+personal discription(nvarchar(256)), subscriptionCode(guid), date of birth(datetimes), 
+
+Seeker:
+id(int), subscriptionCode(guid), Name(nvarchar(50)), date of birth(datetime), phone(nvarchar(50)), email(nvarchar(50)), personal discription(nvarchar(256))
+
+https://www.linkedin.com/jobs/view/206942488?trkInfo=searchKeywordString%3AElectronics%2BEngineer%2CsearchLocationString%3A%252C%2B%2Cvertical%3Ajobs%2CpageNum%3A1%2Cposition%3A1%2CMSRPsearchId%3A207415022_1474750090343&refId=207415022_1474750090343&recommendedFlavor=IN_NETWORK&trk=jobs_jserp_job_listing_text
+
+
+Error	1	'' is a 'namespace' but is used like a 'type'	C:\Projects\PakLetting\PakLetting.Model\Creator\Creator.Models.cs	21	36	PakLetting.Model
+
+
